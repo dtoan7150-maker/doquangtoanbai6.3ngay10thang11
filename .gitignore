@@ -1,0 +1,22 @@
+# Dấu # dùng để comment (ghi chú)
+
+# Bỏ qua một thư mục cụ thể (kèm tất cả nội dung bên trong)
+node_modules/
+build/
+.venv/
+
+# Bỏ qua một file cụ thể
+.env
+config.json
+
+# Bỏ qua tất cả file có đuôi mở rộng nhất định
+*.log
+*.exe
+*.o
+
+# Bỏ qua file log nằm trong bất kỳ thư mục con nào
+**/logs/*.txt
+
+# Ngoại lệ: Bỏ qua tất cả file .log ngoại lệ file quan_trong.log
+*.log
+!quan_trong.log

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Tắt kiểm tra Nullable strict -->
+    <Nullable>disable</Nullable>
+    <!-- Tắt toàn bộ dải mã cảnh báo thừa để Terminal sạch 100% -->
+    <NoWarn>CS0618;CS8618;CS8601;CS8602;CS8604;CS8605;CS8600;CS8622;NU1510</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+</Project>
